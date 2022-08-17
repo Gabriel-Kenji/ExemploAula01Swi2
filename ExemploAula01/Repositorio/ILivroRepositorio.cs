@@ -1,0 +1,12 @@
+﻿using ExemploAula01.Negocio;
+
+namespace ExemploAula01.Repositorio;
+
+public interface ILivroRepositorio
+{
+    ListaDeLeitura ParaLer { get; }
+    ListaDeLeitura Lendo { get; }
+    ListaDeLeitura Lidos { get; }
+    IEnumerable<Livro> Todos { get; }
+    void Incluir(Livro livro);
+}
